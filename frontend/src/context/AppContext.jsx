@@ -6,7 +6,7 @@ export const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
     const currencySymbol = "/-";
-    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    const backendUrl = "https://docmeet-g0lg.onrender.com";
 
     // Fetch token only once to avoid redundant localStorage access
     const [token, setToken] = useState(localStorage.getItem("token") || null);
