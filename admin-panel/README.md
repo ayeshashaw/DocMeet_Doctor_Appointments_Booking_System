@@ -1,12 +1,117 @@
-# React + Vite
+# DoctMeet Admin Panel 🌟
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The DoctMeet Admin Panel is a comprehensive dashboard designed for managing the DoctMeet platform. It features two distinct administrative roles:
 
-Currently, two official plugins are available:
+- **System Admin** 🛠️: Has complete control over the platform, including management of all doctors, users, and system-wide appointments.
+- **Doctor Admin** 👨‍⚕️: Can manage their own profile, appointments, and patient records.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+### System Admin Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### Doctor Management
+![Doctor Management Interface](./public/images/doctorlist.png)
+- View and manage all doctor profiles. 👩‍⚕️
+- Approve or reject doctor registrations. ✅❌
+- Monitor doctor availability and performance. 📊
+- Set doctor specializations and departments. 🏥
+
+#### System-Wide Appointment Management
+![Appointment Management Interface](./public/images/AdminAppointments.png)
+- View and manage all appointments across the platform. 📅
+- Track appointment statuses and analytics. 📈
+- Handle scheduling conflicts and emergency cases. ⚠️
+- Generate appointment reports. 📄
+
+#### Admin Dashboard
+![Admin Dashboard Interface](./public/images/adminDashboard.png)
+- Comprehensive user account management. 🔑
+- Role-based access control and permissions. 🔒
+- System-wide activity monitoring. 👁️‍🗨️
+- Platform analytics and reporting. 📊
+
+### Doctor Admin Features
+
+#### Doctor Profile Management
+![Doctor Profile Interface](./public/images/doctorProfile.png)
+- Update personal and professional information. ✏️
+- Manage credentials and certifications. 📜
+- Set availability schedules. ⏰
+- Update specialization and services offered. 💼
+
+#### Doctor Dashboard
+![Doctor Dashboard Interface](./public/images/DoctorDashboard.png)
+- Track daily, monthly, and yearly earnings. 💰
+- View earnings analytics and trends. 📊
+- Monitor appointment statistics. 📅
+- Generate revenue reports. 📈
+
+#### Appointment Management
+![Doctor Appointment Interface](./public/images/DoctorAppointments.png)
+- View and manage incoming appointment requests. 📬
+- Approve or reject patient appointments. ✅❌
+- Access detailed patient information. 📋
+- Manage appointment schedules and availability. 📆
+- Send notifications for appointment status updates. 🔔
+
+## Tech Stack
+
+- Frontend: React + Vite ⚛️
+- State Management: React Context 🗂️
+- Styling: CSS 🎨
+- Authentication: JWT 🔐
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 14 or higher) 🌐
+- npm or yarn 📦
+
+### Installation
+
+1. Clone the repository. 🖥️
+2. Navigate to the admin-panel directory:
+   ```bash
+   cd admin-panel
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Create a `.env` file with the required environment variables:
+   ```
+   VITE_API_URL=your_backend_url
+   ```
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Project Structure
+
+```
+src/
+  ├── components/     # Reusable UI components 📦
+  ├── context/        # React Context for state management 📜
+  ├── pages/          # Page components 📄
+  ├── assets/         # Static assets 🖼️
+  └── App.jsx         # Main application component 📱
+```
+
+## Available Scripts
+
+- `npm run dev` - Start the development server. 🚀
+- `npm run build` - Build for production. 🏗️
+- `npm run preview` - Preview the production build. 👀
+
+## Contributing
+
+1. Create a feature branch. 🌿
+2. Commit your changes. 💾
+3. Push to the branch. 📤
+4. Create a Pull Request. 🤝
+
+## License
+
+This project is licensed under the MIT License. 📝
