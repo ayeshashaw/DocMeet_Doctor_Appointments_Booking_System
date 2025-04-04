@@ -1,0 +1,135 @@
+/* DoctorsList.css */
+
+.doctors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .doctors-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .doctor-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  .doctor-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+  }
+  
+  .doctor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+  }
+  
+  .doctor-card:hover .doctor-image {
+    transform: scale(1.05);
+  }
+  
+  .doctor-info {
+    padding: 20px;
+  }
+  
+  .doctor-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .doctor-speciality {
+    font-size: 1rem;
+    color: #4a6fdc;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .availability-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .availability-checkbox {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+  }
+  
+  .availability-checkbox:checked {
+    background-color: #4a6fdc;
+    border-color: #4a6fdc;
+  }
+  
+  .availability-checkbox:checked::after {
+    content: "✓";
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .available {
+    color: #36b37e;
+    font-weight: 500;
+  }
+  
+  .unavailable {
+    color: #888;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .doctors-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .doctor-image-container {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .doctors-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .doctors-heading {
+      font-size: 1.75rem;
+    }
+  }

@@ -1,0 +1,185 @@
+.appointment-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.doctor-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4a90e2;
+}
+
+.doctor-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.doctor-details h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.doctor-details p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.book-appointment {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.book-appointment:hover {
+  background-color: #357abd;
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.about-section p {
+  margin: 10px 0;
+  color: #444;
+}
+
+.about-section img {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.about-section span {
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+.slot-dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.slot-container {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slot-container:hover {
+  background-color: #f0f0f0;
+}
+
+.slot-container.active {
+  border-color: #4a90e2;
+  background-color: #e6f2ff;
+  color: #4a90e2;
+}
+
+.slot-container p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.slot-container.active p {
+  color: #4a90e2;
+}
+
+.slot-times {
+  max-height: 200px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-right: 10px;
+}
+
+/* Custom Scrollbar */
+.slot-times::-webkit-scrollbar {
+  width: 8px;
+}
+
+.slot-times::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.slot-times::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.slot-times::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.slot-times p {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slot-times p:hover {
+  background-color: #e0e0e0;
+}
+
+.slot-times p.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .appointment-container {
+    padding: 10px;
+  }
+
+  .doctor-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .slot-dates {
+    flex-direction: column;
+  }
+
+  .slot-container {
+    margin: 5px 0;
+  }
+
+  .slot-times {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

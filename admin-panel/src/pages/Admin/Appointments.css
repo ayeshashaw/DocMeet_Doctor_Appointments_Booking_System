@@ -1,0 +1,191 @@
+/* Appointments.css */
+.appointments-container {
+    padding: 2rem;
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .appointments-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  .appointments-list {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointments-header {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 2fr 2fr 1fr 1.5fr;
+    background-color: #f1f5f9;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+  
+  .appointments-header p {
+    padding: 1rem;
+    margin: 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .appointment-row {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 2fr 2fr 1fr 1.5fr;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .appointment-row:hover {
+    background-color: #f8fafc;
+  }
+  
+  .appointment-row p {
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .appointment-row:last-child {
+    border-bottom: none;
+  }
+  
+  .user-info, .doctor-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .user-info img, .doctor-info img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e2e8f0;
+  }
+  
+  .user-info p, .doctor-info p {
+    font-weight: 500;
+    color: #334155;
+  }
+  
+  .appointment-fee {
+    font-weight: 600;
+    color: #0f766e;
+  }
+  
+  .appointment-date {
+    color: #334155;
+  }
+  
+  .appointment-age {
+    color: #64748b;
+  }
+  
+  .appointment-status {
+    color: #ef4444;
+    font-weight: 500;
+  }
+  
+  .cancel-button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .appointments-header, .appointment-row {
+      grid-template-columns: 0.5fr 2fr 1fr 2fr 1.5fr;
+    }
+    
+    .appointments-header p:nth-child(6),
+    .appointment-row > *:nth-child(6) {
+      display: none;
+    }
+  
+    .appointments-header p:nth-child(5), 
+    .appointment-row > *:nth-child(5) {
+      grid-column: span 2;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .appointments-container {
+      padding: 1rem;
+    }
+    
+    .appointments-header {
+      display: none;
+    }
+    
+    .appointment-row {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #e2e8f0;
+    }
+    
+    .appointment-row p {
+      padding: 0.5rem 0;
+    }
+    
+    .user-info, .doctor-info {
+      justify-content: flex-start;
+    }
+    
+    .user-info::before {
+      content: "Patient: ";
+      font-weight: 600;
+      color: #64748b;
+    }
+    
+    .doctor-info::before {
+      content: "Doctor: ";
+      font-weight: 600;
+      color: #64748b;
+    }
+    
+    .appointment-age::before {
+      content: "Age: ";
+      font-weight: 600;
+      color: #64748b;
+    }
+    
+    .appointment-date::before {
+      content: "Date & Time: ";
+      font-weight: 600;
+      color: #64748b;
+    }
+    
+    .appointment-fee::before {
+      content: "Fee: ";
+      font-weight: 600;
+      color: #64748b;
+    }
+  }
