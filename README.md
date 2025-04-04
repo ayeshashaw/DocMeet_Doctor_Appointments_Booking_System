@@ -1,13 +1,15 @@
 # DocMeet - Doctor Appointment Booking System 🩺📅
 
 ## Overview
-DocMeet is a comprehensive doctor appointment booking system designed to facilitate seamless interaction between patients, doctors, and administrators. The system is built using a modern tech stack and follows a microservices architecture pattern. 🌐
+DocMeet is a comprehensive doctor appointment booking system designed to facilitate seamless interactions between patients, doctors, and administrators. The system is built using a modern tech stack and follows a microservices architecture pattern. 🌐  
+**Deployed link:** https://docmeet-g0lg.onrender.com
 
 ## System Architecture
 
 The application consists of three main components:
 
 ### 1. Frontend (Patient Portal) 👩‍⚕️
+**More information about the frontend:** https://github.com/ayeshashaw/DocMeet_Doctor_Appointments_Booking_System/blob/main/frontend/README.md
 - A React-based application for patients
 - Features:
   - User registration and authentication 🔐
@@ -17,6 +19,7 @@ The application consists of three main components:
   - Medical history tracking 📖
 
 ### 2. Admin Panel 🧑‍💼
+**More information:** https://github.com/ayeshashaw/DocMeet_Doctor_Appointments_Booking_System/blob/main/admin-panel/README.md
 - A dedicated dashboard for system administrators
 - Features:
   - Doctor management 👨‍⚕️
@@ -25,8 +28,9 @@ The application consists of three main components:
   - Appointment oversight 👁️
 
 ### 3. Backend 💻
-- A Node.js/Express server
-- MongoDB database
+**More information about the backend:** https://github.com/ayeshashaw/DocMeet_Doctor_Appointments_Booking_System/blob/main/backend/README.md
+- Built with a Node.js/Express server
+- Uses a MongoDB database
 - Features:
   - RESTful API endpoints ⚙️
   - Authentication middleware 🔒
@@ -55,7 +59,7 @@ The application consists of three main components:
 - MongoDB 🗄️
 - npm or yarn package manager 🎁
 
-### Installation
+### Installation Steps
 
 1. Clone the repository:
 ```bash
@@ -86,17 +90,16 @@ npm install
 - Configure the necessary environment variables (database connection, JWT secret, etc.). 🔑
 
 4. Start the development servers:
-
 ```bash
-# Start backend server
+# Start the backend server
 cd backend
 npm run dev
 
-# Start frontend application
+# Start the frontend application
 cd ../frontend
 npm run dev
 
-# Start admin panel
+# Start the admin panel
 cd ../admin-panel
 npm run dev
 ```
