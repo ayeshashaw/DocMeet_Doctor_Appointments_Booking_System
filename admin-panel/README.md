@@ -10,21 +10,21 @@ The DoctMeet Admin Panel is a comprehensive dashboard designed for managing the 
 ### System Admin Features
 
 #### Doctor Management
-![Doctor Management Interface](./public/images/doctorlist.png)
+![Doctor Management Interface](./public/image/doctorlist.png)
 - View and manage all doctor profiles. 👩‍⚕️
 - Approve or reject doctor registrations. ✅❌
 - Monitor doctor availability and performance. 📊
 - Set doctor specializations and departments. 🏥
 
 #### System-Wide Appointment Management
-![Appointment Management Interface](./public/images/AdminAppointments.png)
+![Appointment Management Interface](./public/image/AdminAppointments.png)
 - View and manage all appointments across the platform. 📅
 - Track appointment statuses and analytics. 📈
 - Handle scheduling conflicts and emergency cases. ⚠️
 - Generate appointment reports. 📄
 
 #### Admin Dashboard
-![Admin Dashboard Interface](./public/images/adminDashboard.png)
+![Admin Dashboard Interface](./public/image/adminDashboard.png)
 - Comprehensive user account management. 🔑
 - Role-based access control and permissions. 🔒
 - System-wide activity monitoring. 👁️‍🗨️
@@ -33,21 +33,21 @@ The DoctMeet Admin Panel is a comprehensive dashboard designed for managing the 
 ### Doctor Admin Features
 
 #### Doctor Profile Management
-![Doctor Profile Interface](./public/images/doctorProfile.png)
+![Doctor Profile Interface](./public/image/doctorProfile.png)
 - Update personal and professional information. ✏️
 - Manage credentials and certifications. 📜
 - Set availability schedules. ⏰
 - Update specialization and services offered. 💼
 
 #### Doctor Dashboard
-![Doctor Dashboard Interface](./public/images/DoctorDashboard.png)
+![Doctor Dashboard Interface](./public/image/DoctorDashboard.png)
 - Track daily, monthly, and yearly earnings. 💰
 - View earnings analytics and trends. 📊
 - Monitor appointment statistics. 📅
 - Generate revenue reports. 📈
 
 #### Appointment Management
-![Doctor Appointment Interface](./public/images/DoctorAppointments.png)
+![Doctor Appointment Interface](./public/image/DoctorAppointments.png)
 - View and manage incoming appointment requests. 📬
 - Approve or reject patient appointments. ✅❌
 - Access detailed patient information. 📋
