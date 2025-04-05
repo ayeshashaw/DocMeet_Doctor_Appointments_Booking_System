@@ -63,7 +63,7 @@ The application consists of three main components:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/DocMeet.git
+git clone https://github.com/ayeshashaw/DocMeet_Doctor_Appointments_Booking_System.git
 cd DocMeet
 ```
 
