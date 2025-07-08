@@ -9,7 +9,7 @@ The DoctMeet Admin Panel is a comprehensive dashboard designed for managing the 
 
 **Admin Credentials**:  
 - Email: admin@docmeet.com  
-- Password: admin@123  
+- Password: admin123  
 
 If you need admin access for any doctor, use the following credentials:  
 - Email: sandeepa.mehta@docMeet.com  
